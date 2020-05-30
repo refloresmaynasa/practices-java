@@ -1,0 +1,11 @@
+package ricky.practices.springboot.dao;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import ricky.practices.springboot.model.DAOUser;
+
+@Repository
+public interface UserDao extends CrudRepository<DAOUser, Integer> {
+    DAOUser findByUsername(String username);
+}
