@@ -13,6 +13,6 @@ public class HelloWorldController {
 
     @RequestMapping({"/hello"})
     public String firstPage() {
-        return "Hello World Ricky";
+        return "Hello World Ricky ...";
     }
 }
